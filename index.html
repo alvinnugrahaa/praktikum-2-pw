@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perkenalan Diri | Profesional & Modern</title>
+    <style>
+        /* RESET & DASAR */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        }
+
+        :root {
+            --primary-gradient: linear-gradient(135deg, #6366f1 0%, #a855f7 100%);
+            --bg-color: #f8fafc;
+            --text-main: #1e293b;
+            --text-muted: #64748b;
+            --card-bg: #ffffff;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        /* CONTAINER UTAMA */
+        .container {
+            background: var(--card-bg);
+            max-width: 600px;
+            width: 100%;
+            border-radius: 24px;
+            overflow: hidden;
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.05);
+            position: relative;
+        }
+
+        /* AKSEN DEKORATIF (PENGGANTI GAMBAR) */
+        .header-accent {
+            height: 12px;
+            background: var(--primary-gradient);
+            width: 100%;
+        }
+
+        .profile-initial {
+            width: 100px;
+            height: 100px;
+            background: var(--primary-gradient);
+            margin: 40px auto 20px;
+            border-radius: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-size: 42px;
+            font-weight: 800;
+            box-shadow: 0 10px 20px rgba(99, 102, 241, 0.3);
+            transform: rotate(-5deg);
+            transition: transform 0.3s ease;
+        }
+
+        .profile-initial:hover {
+            transform: rotate(0deg) scale(1.05);
+        }
+
+        /* KONTEN TEKS */
+        .content {
+            padding: 0 40px 40px;
+            text-align: center;
+        }
+
+        .name {
+            font-size: 28px;
+            font-weight: 800;
+            margin-bottom: 8px;
+            letter-spacing: -0.5px;
+        }
+
+        .title {
+            font-size: 16px;
+            font-weight: 600;
+            color: #6366f1;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 24px;
+        }
+
+        .bio {
+            font-size: 16px;
+            color: var(--text-muted);
+            line-height: 1.7;
+            margin-bottom: 32px;
+        }
+
+        /* BAGIAN SKILL / TAGS */
+        .skills-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+            margin-bottom: 40px;
+        }
+
+        .skill-tag {
+            background: #f1f5f9;
+            color: #475569;
+            padding: 8px 16px;
+            border-radius: 12px;
+            font-size: 13px;
+            font-weight: 600;
+            transition: all 0.2s ease;
+            border: 1px solid transparent;
+        }
+
+        .skill-tag:hover {
+            background: #e2e8f0;
+            border-color: #cbd5e1;
+            transform: translateY(-2px);
+        }
+
+        /* TOMBOL AKSI */
+        .actions {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .btn-primary {
+            background: var(--primary-gradient);
+            color: white;
+            padding: 16px;
+            border-radius: 14px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 15px;
+            transition: opacity 0.3s;
+            box-shadow: 0 4px 15px rgba(99, 102, 241, 0.2);
+        }
+
+        .btn-primary:hover {
+            opacity: 0.9;
+        }
+
+        .btn-secondary {
+            background: transparent;
+            color: var(--text-muted);
+            padding: 12px;
+            border-radius: 14px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 14px;
+            border: 1px solid #e2e8f0;
+            transition: all 0.2s;
+        }
+
+        .btn-secondary:hover {
+            background: #f8fafc;
+            color: var(--text-main);
+        }
+
+        /* RESPONSIVE */
+        @media (max-width: 480px) {
+            .content {
+                padding: 0 24px 32px;
+            }
+            .name {
+                font-size: 24px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Garis gradasi di bagian paling atas -->
+        <div class="header-accent"></div>
+
+        <!-- Inisial Nama sebagai pengganti foto profil -->
+        <div class="profile-initial">AN</div>
+
+        <div class="content">
+            <h1 class="name">Alvin Nugraha</h1>
+            <p class="title">Creative Developer & Tech Enthusiast</p> 
+            <p class="bio">
+                Halo! Saya adalah seorang pengembang yang berfokus pada menciptakan pengalaman digital yang intuitif dan estetik. Saya percaya bahwa kesederhanaan adalah kunci dari desain yang hebat.
+            </p>
+
+            <div class="skills-container">
+                <span class="skill-tag">JavaScript</span>
+                <span class="skill-tag">UI/UX Design</span>
+                <span class="skill-tag">Project Management</span>
+                <span class="skill-tag">Technical Writing</span>
+            </div>
+
+            <div class="actions">
+                <a href="mailto:alvinnugraha@students.amikom.ac.id" class="btn-primary">Kirim Pesan Sekarang</a>
+                <a href="#" class="btn-secondary">Lihat Portofolio</a>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

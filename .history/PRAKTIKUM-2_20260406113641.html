@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halo, Saya [Nama Anda]!</title>
+    <style>
+        /* CSS UNTUK TAMPILAN */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #f4f7f6;
+            color: #333;
+            line-height: 1.6;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .card {
+            background: #fff;
+            max-width: 500px;
+            width: 100%;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+
+        .profile-img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            background: #007bff; /* Warna pengganti jika foto tidak ada */
+            margin-bottom: 20px;
+            object-fit: cover;
+            border: 5px solid #eef2f3;
+        }
+
+        h1 {
+            font-size: 24px;
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 16px;
+            color: #666;
+            margin-bottom: 25px;
+        }
+
+        .skills {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            flex-wrap: wrap;
+            margin-bottom: 30px;
+        }
+
+        .skill-badge {
+            background: #eef2f3;
+            padding: 5px 15px;
+            border-radius: 50px;
+            font-size: 14px;
+            font-weight: bold;
+            color: #007bff;
+        }
+
+        .btn {
+            display: inline-block;
+            text-decoration: none;
+            background: #007bff;
+            color: white;
+            padding: 12px 30px;
+            border-radius: 10px;
+            transition: background 0.3s ease;
+        }
+
+        .btn:hover {
+            background: #0056b3;
+        }
+
+        .footer {
+            margin-top: 30px;
+            font-size: 12px;
+            color: #aaa;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <img src="https://via.placeholder.com/150" alt="Foto Profil" class="profile-img">
+        
+        <h1>Halo, Saya [Nama Kamu]</h1>
+        <p>Saya adalah seorang [Pekerjaan/Hobi] yang sangat tertarik dengan dunia teknologi dan desain. Senang bertemu denganmu secara digital!</p>
+
+        <div class="skills">
+            <span class="skill-badge">Web Design</span>
+            <span class="skill-badge">Copywriting</span>
+            <span class="skill-badge">Photography</span>
+        </div>
+
+        <a href="mailto:emailanda@example.com" class="btn">Hubungi Saya</a>
+
+        <div class="footer">
+            &copy; 2026 [Nama Kamu]. Dibuat dengan semangat.
+        </div>
+    </div>
+
+</body>
+</html>
